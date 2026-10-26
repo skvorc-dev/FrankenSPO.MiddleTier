@@ -1,0 +1,21 @@
+name: Planned repository validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate planned foundation
+        shell: bash
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f AGENTS.md
+          test -f docs/READINESS.md
+          test -f branding/logo.svg
+          test -f branding/banner.svg
