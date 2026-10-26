@@ -1,3 +1,5 @@
+<p align="center"><img src="branding/banner.svg" alt="Project banner" width="100%"/></p>
+
 # FrankenSPO.MiddleTier
 
 > **Status: planned — not implemented.** This public repository is reserved for a future component of the [FrankenSPO](https://github.com/skvorc-dev/FrankenSPO) ecosystem.
