@@ -1,4 +1,4 @@
-# Development status
+# FrankenSPO MiddleTier Server — development status
 
 **Planned: no working server or client SDK.**
 

@@ -18,13 +18,18 @@
     ],
     "dest": "_site",
     "template": [
-      "default"
+      "default",
+      "modern"
     ],
     "globalMetadata": {
-      "_appTitle": "FrankenSPO MiddleTier",
-      "_appName": "FrankenSPO MiddleTier",
+      "_appTitle": "FrankenSPO MiddleTier Server",
+      "_appName": "FrankenSPO MiddleTier Server",
       "_enableSearch": true,
-      "_appFooter": "FrankenSPO by Sferix · Early development"
+      "_appFooter": "FrankenSPO by Sferix · Early development",
+      "_appLogoPath": "assets/logo.svg",
+      "_appLogoUrl": "/",
+      "_appFaviconPath": "assets/favicon.svg",
+      "_lang": "en"
     }
   }
 }
