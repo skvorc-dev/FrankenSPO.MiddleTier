@@ -16,6 +16,7 @@ jobs:
           test -f README.md
           test -f LICENSE
           test -f AGENTS.md
+          test -f CLAUDE.md
           test -f docs/READINESS.md
           test -f branding/logo.svg
           test -f branding/banner.svg
