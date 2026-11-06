@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  dotnet:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+      - name: Fetch the pinned FrankenSPO build
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/fetch-frankenspo.sh
+      - run: dotnet restore FrankenSPO.MiddleTier.slnx
+      - run: dotnet build FrankenSPO.MiddleTier.slnx -c Release --no-restore
+      - run: dotnet test FrankenSPO.MiddleTier.slnx -c Release --no-build

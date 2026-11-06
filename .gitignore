@@ -1,1 +1,8 @@
 _site/
+bin/
+obj/
+.packages/
+TestResults/
+*.user
+.vs/
+.idea/
