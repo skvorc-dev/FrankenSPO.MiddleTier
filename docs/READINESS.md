@@ -1,6 +1,6 @@
 # M0 — Development readiness gate
 
-**Status: blocked pending verified Core capabilities.** Track completion in [issue #1](https://github.com/skvorc-dev/FrankenSPO.MiddleTier/issues/1).
+**Status: blocked pending verified Core capabilities** (for the first release; the build skeleton exists since 2026-11-06). Track completion in [issue #1](https://github.com/skvorc-dev/FrankenSPO.MiddleTier/issues/1).
 
 - [ ] Verified Core ObjectSpace, identity, transactions, partial loading and detached ChangeSet contracts
 - [ ] Server-authoritative policy, revision and transaction enforcement

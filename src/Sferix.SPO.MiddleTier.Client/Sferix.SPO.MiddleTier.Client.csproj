@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Sferix.SPO.Core" Version="$(FrankenSpoVersion)" />
+  </ItemGroup>
+</Project>

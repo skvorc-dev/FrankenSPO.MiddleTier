@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Sferix.SPO.MiddleTier/Sferix.SPO.MiddleTier.csproj" />
+    <Project Path="src/Sferix.SPO.MiddleTier.Client/Sferix.SPO.MiddleTier.Client.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Sferix.SPO.MiddleTier.Tests/Sferix.SPO.MiddleTier.Tests.csproj" />
+  </Folder>
+</Solution>

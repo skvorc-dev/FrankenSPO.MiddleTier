@@ -2,7 +2,7 @@
 
 # FrankenSPO.MiddleTier
 
-> **Status: planned — not implemented.** This public repository is reserved for a future component of the [FrankenSPO](https://github.com/skvorc-dev/FrankenSPO) ecosystem.
+> **Status: skeleton — no runtime behavior yet.** Solution, CI and tests build against a pinned [FrankenSPO](https://github.com/skvorc-dev/FrankenSPO) pre-release. There is no public API until a feature works and is tested.
 
 Remote ObjectSpace and versioned persistence protocol for managed and native-language clients.
 
@@ -10,7 +10,19 @@ The planned MiddleTier supplies remote tracked-object behavior and short-lived s
 
 ## Development readiness
 
-Implementation begins only after the conditions in the [M0 development readiness issue](https://github.com/skvorc-dev/FrankenSPO.MiddleTier/issues/1) are verified. No published API, NuGet package, or runtime behavior is claimed yet.
+The skeleton started on 2026-11-06. The first release of this repository still waits for the [M0 gate](https://github.com/skvorc-dev/FrankenSPO.MiddleTier/issues/1); nothing here is usable before it.
+
+## Build
+
+```bash
+scripts/fetch-frankenspo.sh   # downloads and checksum-verifies the FrankenSPO packages named in Directory.Build.props
+dotnet build FrankenSPO.MiddleTier.slnx -c Release
+dotnet test FrankenSPO.MiddleTier.slnx -c Release --no-build
+```
+
+## Contributions
+
+Generic, application-neutral code only, under MIT (see [CONTRIBUTING.md](CONTRIBUTING.md)). Agree the shape in an issue before a large change.
 
 ## Examples and documentation
 
