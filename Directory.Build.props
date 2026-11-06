@@ -16,7 +16,7 @@
     <RepositoryUrl>https://github.com/skvorc-dev/FrankenSPO.MiddleTier</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <!-- The FrankenSPO build this repository compiles against: a GitHub pre-release, fetched by scripts/fetch-frankenspo.sh. -->
-    <FrankenSpoVersion>0.0.1-alpha.poc.5</FrankenSpoVersion>
+    <FrankenSpoVersion>0.1.0-alpha.1</FrankenSpoVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(MSBuildProjectDirectory.StartsWith('$(MSBuildThisFileDirectory)src/')) or $(MSBuildProjectDirectory.StartsWith('$(MSBuildThisFileDirectory)src\'))">
